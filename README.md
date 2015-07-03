@@ -1,4 +1,4 @@
-# Regions of China
+# Regions of China (中国省市地区和行政区划数据)
 The administrative divisions of China, provide CSV, SQL, text, Excel and XML data format.
 
 Latest upated time: 2014-10-31
@@ -22,7 +22,7 @@ CREATE TABLE `region` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ```
 
-# Chinese
+# 说明
 中国行政区划数据. 包括省(直辖市)、市(县)和区, 数据来自"中华人民共和国统计局"官方网站. 数据截止2014年10月31日.
 
 # References
