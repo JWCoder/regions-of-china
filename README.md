@@ -1,5 +1,7 @@
 # Regions of China
-The administrative divisions of China, provade CSV, SQL, text, Excel and XML data format.
+The administrative divisions of China, provide CSV, SQL, text, Excel and XML data format.
+
+Latest upated time: 2014-10-31
 
 # Data format
 * regions-of-china.csv  CSV format.
@@ -7,6 +9,21 @@ The administrative divisions of China, provade CSV, SQL, text, Excel and XML dat
 * regions-of-china.txt  Text format.
 * regions-of-china.xlsx  Excel format.
 * regions-of-china.xml  XML format.
+
+# Table structure
+```sql
+CREATE TABLE `region` (
+  `district_id` int(10) unsigned NOT NULL,
+  `district_name` varchar(128) NOT NULL,
+  `city_id` int(10) unsigned NOT NULL,
+  `city_name` varchar(128) NOT NULL,
+  `province_id` int(10) unsigned NOT NULL,
+  `province_name` varchar(128) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
+
+# Chinese
+中国行政区划数据. 包括省(直辖市)、市(县)和区, 数据来自"中华人民共和国统计局"官方网站. 数据截止2014年10月31日.
 
 # References
 * https://en.wikipedia.org/wiki/List_of_regions_of_the_People%27s_Republic_of_China
